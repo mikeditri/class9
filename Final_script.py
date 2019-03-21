@@ -42,7 +42,7 @@ accuracy_score = (gnb_eval.mean())
 cm = confusion_matrix(y_test , predictions)
 #print(cm)
 
-plt.figure(figsize=(14,14))
+plt.figure(figsize=(10,10))
 sns.heatmap(cm, annot=True, fmt=".3f",linewidths=.5, square = True, cmap = 'Blues_r')
 cmap = ('Blues_r')
 plt.ylabel('Actual label')
