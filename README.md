@@ -49,7 +49,7 @@ We can see in the confusion matrix that this model has a accuracy well over 95% 
 
 ### Discussion
 
-The method used seems to easily predict wine origin based on its chemical composition when using all features in the analysis. With a accuracy rate over 95%, it seems to be more than adequate to be able to identify which vinyard a non-labeled wine comes from. There is always ways to improve and just because the accuracy rate is high it doesn't mean that it will perform this well with new data. In order to make this better, I would try to to run this model on new data, measure the performance and then if the models accuracy is deteriorating I would then try tune the selected features to improve the model. 
+The method used seems to easily predict wine origin based on its chemical composition when using all features in the analysis. With a accuracy rate over 95%, it seems to be more than adequate to be able to identify which vinyard a non-labeled wine comes from. There is always ways to improve and just because the accuracy rate is high it doesn't mean that it will perform this well with new data. In order to make this better, I would try to to run this model on new data, measure the performance and then if the models accuracy is deteriorating, I would tune the selected features to improve the model. 
 
 ### References
 
