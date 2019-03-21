@@ -11,8 +11,8 @@ Your repository should include the following:
 
 - Python script for your analysis: `Final_script.py`
 - Results figure/saved file: `figures/`
-- Dockerfile for your experiment
-- runtime-instructions in a file named RUNME.md
+- Dockerfile for your experiment: `Dockerfile`
+- runtime-instructions in a file named `RUNME.md`
 
 -----
 
@@ -22,62 +22,39 @@ Based on 13 different chemical compenents of wine, can we predict from which of 
 
 ### Abstract
 
-4 sentence longer explanation about your research question. Include:
-
-- opportunity (what data do we have):
-
-The data is comprised of thirteen different measurements taken for different constituents found in the three types of wine (3 different origins). 
-
-- action (how will we try to solve this problem/answer this question)
-
-Leveraging this data, we may be able to determine the relationship between the chemical composition of wine, which could then be used to classify wine that has lost its label.
-
-- resolution (what did we end up producing)
-
-Based on the performance of the "Insert Clustering model name", we found that the model was fairly consistent and could be used as a relatively good for determining the origin of the wine.
+The data is comprised of thirteen different measurements taken for different constituents found in the three types of wine (3 different origins). Leveraging this data, we may be able to determine the relationship between the chemical composition of wine, which could then be used to classify wine that has lost its label. Based on the performance of the Gaussian Naive Bayes model, we found that the model was fairly consistent and could be used as a relatively good model for determining the origin of the wine.
 
 ### Introduction
 
-Brief (no more than 1-2 paragraph) description about the dataset. Can copy from elsewhere, but cite the source (i.e. at least link, and explicitly say if it's copied from elsewhere).
-
 The data is the results of a chemical analysis of wines grown in the same region in Italy by three different cultivators
-. There are thirteen different measurements taken for different constituents found in the three types of wine.
- (https://scikit-learn.org/stable/datasets/index.html#wine-dataset)
-
+There are thirteen different measurements taken for different constituents found in the three types of wine.
+(https://scikit-learn.org/stable/datasets/index.html#wine-dataset)
 
 ### Methods
 
-Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
-
-- pseudocode for this method (either created by you or cited from somewhere else)
-- why you chose this method
-The method used for modelling this data was Naive Bayes Classifier built into scikit-learn. 
-
+The method for modelling the data was Gaussian Naive Bayes built into scikit-learn. 
 Pseudocode: https://scikit-learn.org/stable/modules/naive_bayes.html
 
 The reason why we chose Naive Bayes is because it works well with a small training set, is extremely fast.
-Also, The decoupling of the class conditional feature distributions means that each distribution can be independently estimated as a one dimensional distribution. This in turn helps to alleviate problems stemming from the curse of dimensionality. (https://scikit-learn.org/stable/modules/naive_bayes.html)
+Also, The decoupling of the class conditional feature distributions means that each distribution can be independently estimated as a one dimensional distribution. This in turn helps to alleviate problems stemming from the curse of dimensionality. 
+(https://scikit-learn.org/stable/modules/naive_bayes.html)
 
 Secondly, we found another group who ran the same data set through multiple classifiers and showed that Naive Bayes had one of the best performances (>95%). (https://jonathonbechtel.com/blog/2018/02/06/wines/)
-
 
 ### Results
 
 Brief (2 paragraph) description about your results. Include:
 
-- At least 1 figure
-- At least 1 "value" that summarizes either your data or the "performance" of your method
-- A short explanation of both of the above
 ![alt text](https://github.com/mikeditri/class9/blob/master/figures/Gaussian_NB_with_Accuracy.png)
 
+We can see in the confusion matrix that this model has a accuracy well over 95% and the number of misclassified wines in very low thus illustrating that this model is a good choice for classifying the wines.
 
 ### Discussion
-Brief (no more than 1-2 paragraph) description about what you did. Include:
 
-- interpretation of whether your method "solved" the problem
-- suggested next step that could make it better.
+The method used seems to easily predict wine origin based on its chemical composition when using all features in the analysis. With a accuracy rate over 95%, it seems to be more than adequate to be able to identify which vinyard a non-labeled wine comes from. There is always ways to improve and just because the accuracy rate is high it doesn't mean that it will perform this well with new data. In order to make this better, I would try to to run this model on new data, measure the performance and then if the models accuracy is deteriorating I would then try tune the selected features to improve the model. 
 
 ### References
-All of the links
+
+The links referenced were included in my discussion, above.
 
 -------
