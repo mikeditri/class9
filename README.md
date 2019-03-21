@@ -69,7 +69,7 @@ Brief (2 paragraph) description about your results. Include:
 - At least 1 figure
 - At least 1 "value" that summarizes either your data or the "performance" of your method
 - A short explanation of both of the above
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/mikeditri/class9/blob/master/Gaussian_NB_with_Accuracy.png)
 
 
 ### Discussion
