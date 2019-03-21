@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-
+import os
+import errno
 import sklearn.datasets
 from sklearn.datasets import load_wine
 wine_data = load_wine()

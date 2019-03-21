@@ -1,5 +1,4 @@
 # cebd1160_project_template
-Instructions and template for final projects.
 
 | Name | Date |
 |:-------|:---------------|
@@ -10,8 +9,8 @@ Instructions and template for final projects.
 ### Resources
 Your repository should include the following:
 
-- Python script for your analysis
-- Results figure/saved file
+- Python script for your analysis: `Final_script.py`
+- Results figure/saved file: `figures/`
 - Dockerfile for your experiment
 - runtime-instructions in a file named RUNME.md
 
