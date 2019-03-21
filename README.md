@@ -26,14 +26,14 @@ The data is comprised of thirteen different measurements taken for different con
 
 ### Introduction
 
-The data is the results of a chemical analysis of wines grown in the same region in Italy by three different cultivators
-There are thirteen different measurements taken for different constituents found in the three types of wine.
+The data is the results of a chemical analysis of wines grown in the same region in Italy by three different cultivators.
+/nThere are thirteen different measurements taken for different constituents found in the three types of wine.
 (https://scikit-learn.org/stable/datasets/index.html#wine-dataset)
 
 ### Methods
 
 The method for modelling the data was Gaussian Naive Bayes built into scikit-learn. 
-Pseudocode: https://scikit-learn.org/stable/modules/naive_bayes.html
+/nPseudocode: https://scikit-learn.org/stable/modules/naive_bayes.html
 
 The reason why we chose Naive Bayes is because it works well with a small training set, is extremely fast.
 Also, The decoupling of the class conditional feature distributions means that each distribution can be independently estimated as a one dimensional distribution. This in turn helps to alleviate problems stemming from the curse of dimensionality. 
